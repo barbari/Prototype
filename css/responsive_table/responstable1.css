@@ -1,0 +1,183 @@
+
+.table-wrapper {
+   position: relative;
+   max-width: 70em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+.table-menu-wrapper {
+   position: absolute;
+  right: 3em; 
+}
+.table-menu {
+  position: absolute;
+ border: 1px solid #ccc;background-color:white;
+   font-size: 1em;
+   width: 12em;
+   right: 5%;
+   left: auto;z-index:999;
+}
+
+
+.table-menu-hidden {
+   left: -999em;
+   right: auto;
+}
+.table-menu-btn {
+   text-decoration: none;
+   color: #eee;
+   font-size: 1em;
+   background: #999 url(../img/icon-menu.png) no-repeat 5px center; 
+   padding: .3em 10px .3em 20px;
+   border-radius: 5px;
+}
+.table-menu li {
+   padding: .3em 0;
+}
+
+
+
+/* Table styles */
+table {
+	width: 100%;
+	font-size: 0.8em;margin-top:30px;
+}
+thead th {
+	white-space: nowrap;
+	border-bottom: 1px solid #ccc;
+	color: #888;margin-top:20px;  
+}
+th, td {
+ padding:1em 1em;
+text-align: right;
+}
+
+tr.blocked{
+   opacity:0.7;background-color:#eee;
+}
+th:first-child, 
+td:first-child {
+   text-align: left;
+}
+tbody th, td {
+	border-bottom: 1px solid #e6e6e6;
+}
+.co-name {
+   display: block;
+   font-size: .9em;
+   opacity: .4;
+}
+tr.table_header{
+	background-color:#444; border-radius:15px; color:red;
+}
+.enhanced th,
+.enhanced td {
+   display: none;
+}
+
+.legacy-ie .enhanced th.essential, 
+.legacy-ie .enhanced td.essential, {
+	display: inline;
+}
+.enhanced th.essential, 
+.enhanced td.essential {
+   display: table-cell;
+}
+
+th.lock img{ margin-top:1px;left:0px;}
+
+th.sq img{ margin-top:3px;}
+
+@media screen and (min-width: 500px) {
+	.legacy-ie .enhanced th.optional, 
+	.legacy-ie .enhanced td.optional {
+		display: inline;
+	}
+	.enhanced th.optional, 
+	.enhanced td.optional {
+		display: table-cell;
+	}
+}
+
+@media screen and (min-width: 800px) {
+   .legacy-ie .enhanced th, 
+   .legacy-ie .enhanced td {
+      display: inline;
+   }
+   .enhanced th, 
+   .enhanced td {
+      display: table-cell;
+   }
+}
+
+
+/* Sort table */
+
+
+
+.sortable td.evenselected {background:#eaeaea}
+.sortable td.oddselected {background:#eaeaea}
+
+#controls {margin-bottom:3em;display:inline-block;}
+#perpage {width:15em;}
+#perpage select {float:left; font-size:11px}
+#perpage span {float:left; margin:2px 0 0 5px}
+#navigation { float:left; width:20em; text-align:center;}
+#navigation img {cursor:pointer}
+#text {width:30em;  text-align:right; margin-top:2px;}
+
+
+
+
+
+
+/* Pagination */
+.pagination{ width:70%}
+.pagination > a, .pagination > span {
+  float: left;
+  margin-left: 5px;
+  padding: 0 6px;
+  min-width: 17px;
+  line-height: 27px;
+font-weight: 500;
+  color: #d4d4d4;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.pagination :first-child {
+  margin-left: 0;
+}
+.pagination > a {
+  text-decoration: none;  
+  background-color: #333;
+  text-shadow: 0 1px black;
+  
+}
+.pagination > a:hover {
+  background-color: #555;color:#999;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #444;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+
+	font-size: 18px;
+	background: #555;
+	margin-top:-5px;
+	z-index:1000;
+	overflow:visible;
+}
+
+.cbp-spmenu h2 {
+	font-size: 15px;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+}
+
+.cbp-spmenu a:hover {
+	background: #666;
+}
+
+.cbp-spmenu a:active {
+	background: #666;
+	color: #999;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-horizontal {
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 30%;
+	float: left;
+	display: inline;padding-left:20px;
+
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 10%;
+	display: inline;
+}
+
+
+/* Horizontal menu that slides from the top or bottom */
+.cbp-spmenu-bottom {
+	bottom: -100px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+	
+	
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+/* Transitions */
+.cbp-spmenu,.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+@media screen and (max-width: 55.1875em) {
+	.cbp-spmenu-horizontal h3 {
+		height: 100%;
+		width: 100%;
+		float: left;
+		background-color: #555;
+		border-bottom: 1px solid #999;
+		display: inline;
+	}
+	.cbp-spmenu-horizontal a {
+		float: left;
+		width: 100%;
+		display: inline;
+		border-bottom: 1px solid #999;
+	}
+	.cbp-spmenu-bottom {
+		bottom: -620px;
+	}
+}
+
+@media screen and (max-height: 26.375em) {
+	.cbp-spmenu-horizontal h3 {
+		height: 100%;
+		width: 100%;
+		float: left;
+		background-color: #555;
+		border-bottom: 1px solid #999;
+		display: inline;
+		padding: 0 3em;
+	}
+	cbp-spmenu-horizontal h2 {
+		padding: 0 3em;
+	}
+	.cbp-spmenu-horizontal a {
+		float: left;
+		width: 100%;
+		border-bottom: 1px solid #999;
+		display: inline;
+	}
+	.cbp-spmenu-bottom {
+		bottom: -40px;;
+	}
+}
