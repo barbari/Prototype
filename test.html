@@ -1,99 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prototype</title>
-
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="stylesheet" type="text/css" href="css/default.css" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<link rel="stylesheet" type="text/css" href="css/footer_slideup.css" />
-
-	<script src="js/cbpHorizontalMenu.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script>
-		var menuBottom = document.getElementById('cbp-spmenu-s4'),
-
-		showBottom = document.getElementById('showBottom'),
-
-		body = document.body;
-
-		showBottom.onclick = function() {
-			classie.toggle(this, 'active');
-			classie.toggle(menuBottom, 'cbp-spmenu-open');
-			disableOther('showBottom');
-		};
-
-		function disableOther(button) {
-
-			if (button !== 'showBottom') {
-				classie.toggle(showBottom, 'disabled');
-			}
-
-		}
-	</script>
-
-	<script>
-	var cbpHorizontalMenu = (function() {
-		 
-	    var $listItems = $( '#cbp-hrmenu > ul > li' ),
-	        $menuItems = $listItems.children( 'a' ),
-	        $body = $( 'body' ),
-	        current = -1;
-	 
-	    function init() {
-	        $menuItems.on( 'click', open );
-	        $listItems.on( 'click', function( event ) { event.stopPropagation(); } );
-	    }
-	 
-	    function open( event ) {
-	 
-	        if( current !== -1 ) {
-	            $listItems.eq( current ).removeClass( 'cbp-hropen' );
-	        }
-	 
-	        var $item = $( event.currentTarget ).parent( 'li' ),
-	            idx = $item.index();
-	 
-	        if( current === idx ) {
-	            $item.removeClass( 'cbp-hropen' );
-	            current = -1;
-	        }
-	        else {
-	            $item.addClass( 'cbp-hropen' );
-	            current = idx;
-	            $body.off( 'click' ).on( 'click', close );
-	        }
-	 
-	        return false;
-	 
-	    }
-	 
-	    function close( event ) {
-	        $listItems.eq( current ).removeClass( 'cbp-hropen' );
-	        current = -1;
-	    }
-	 
-	    return { init : init };
-	 
-	})();
-	</script>
-	
-
-        
-          
-</head>
-<body>
-	
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Blueprint: Horizontal Drop-Down Menu</title>
+		<meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+		<meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
 		
-	<div class="container">
-
-		<div class="main">
-
-			<nav id="cbp-hrmenu" class="cbp-hrmenu">
+			<div class="main">
+				<nav id="cbp-hrmenu" class="cbp-hrmenu">
 
 				<ul>
 					<li id="logo" ><a href="index.html"><img
@@ -183,55 +107,15 @@
 						</div> <!-- /cbp-hrsub --></li>
 				</ul>
 			</nav>
-
-<section class="container">
-
-  </section>
-
+				
+			</div>
 		</div>
-	<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
-			<h3 id="showBottom">Tools</h3>
-			<a href="#">
-			<section>
-			<img src="img/icon__footer_1.jpg">
-			<h2>News</h2>
-			
-			</section>
-			</a>
-			<a href="#">
-			<section>
-			<img src="img/icon_basket.png">
-			<h2>Products & Services</h2>
-			
-			</section>
-			</a><a href="#">
-			<section>
-			<img src="img/icon_salessupport.png">
-			<h2>Sales Support</h2>
-			
-			</section>
-			</a><a href="#">
-			<section>
-			<img src="img/icon_earth.png">
-			<h2>Workplace</h2>
-			
-			</section>
-			</a><a href="#">
-			<section>
-			<img src="img/icon_client_exp.png">
-			<h2>Client Experience</h2>
-			
-			</section>
-			</a><a href="#">
-			<section>
-			<img src="img/icon_analitics.png">
-			<h2>Management Reporting</h2>
-			
-			</section>
-			</a>
-			
-		</nav>
-	</div>
-
-</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/cbpHorizontalMenu.min.js"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
+	</body>
 </html>
