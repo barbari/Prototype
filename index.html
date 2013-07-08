@@ -13,7 +13,7 @@
 <script src="js/modernizr.custom.js"></script>
 <!-- Responsive Table starts -->
   <link rel="stylesheet" type="text/css" media="all" href="css/responsive_table/responstable1.css">
-<script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive_table/responstable0.js"></script>
+<script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive_table/jQuery v1.6.4.js"></script>
     <script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive_table/responstable1.js"></script>
       <script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive_table/responstable2.js"></script>
         <script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive_table/responstable3.js"></script>
@@ -420,34 +420,7 @@
 				</tr>
 			</tbody>
 		</table>
-		<div id="controls">
-			<div id="perpage" class="pagination">
-				<a ><select onchange="sorter.size(this.value)">
-					<option value="5">5</option>
-					<option value="10" selected="selected">10</option>
-					<option value="20">20</option>
-					<option value="50">50</option>
-					<option value="100">100</option>
-				</select> <span > Entries Per Page</span></a>
-			</div>
-			<div id="navigation" class="pagination">
-					<a ><img src="img/table/first.gif" width="16" height="16"
-					alt="First Page" onclick="sorter.move(-1,true)" /> </a>
-						<a ><img
-					src="img/table/previous.gif" width="16" height="16"
-					alt="First Page" onclick="sorter.move(-1)" /> </a>
-						<a ><img
-					src="img/table/next.gif" width="16" height="16" alt="First Page"
-					onclick="sorter.move(1)" /> </a>
-						<a ><img src="img/table/last.gif"
-					width="16" height="16" alt="Last Page"
-					onclick="sorter.move(1,true)" /></a>
-			</div>
-			<div id="text">
-				Displaying Page <span id="currentpage"></span> of <span
-					id="pagelimit"></span>
-			</div>
-		</div>
+		
 		
 </div><!-- /table-wrapper -->
   </section>
@@ -558,102 +531,9 @@
 			});
 	</script>
 	<!-- Sorting+ expndable rows in table -->
-<style type="text/css">
-
-
-/* define table skin */
-table.grid {
-	margin: 0;
-	padding: 0;
-	border-collapse: separate;
-	border-spacing: 0;
-	width: 100%;background-color:#dedede;
-}
-
-table.grid * {
-
-	vertical-align: top;
-	text-align: left;
-}
-
-table.grid thead{
-	background-color: #555;border-radius:5px;
-}
-
-/* use the below style below to hide the collapsed rows via CSS, you must also set the showCollapsed setting to true */
-/*
-		table.grid tr.expand-child td {
-			display: none;
-		}
-*/
-table.grid th {
-	color: #eee;
-	padding: 4px 16px 4px 0;
-	cursor: pointer;
-}
-
-table.grid td {
-	color: #555;
-	padding: 4px 6px;
-}
-
-table.grid th.headerSortUp {
-	background: #e6edc1 url("img/tablesorter_bkgrd.png") no-repeat 100% -80px;
-}
-
-table.grid th.headerSortUp span {
-	background: #e6edc1 url("img/tablesorter_bkgrd.png") no-repeat 0 -80px;
-}
-
-table.grid th.headerSortDown {
-	background: #e6edc1 url("img/tablesorter_bkgrd.png") no-repeat 100% 2px;
-}
-
-table.grid th.headerSortDown span {
-	background: #e6edc1 url("img/tablesorter_bkgrd.png") no-repeat 0 2px;
-}
-
-table.grid th span {
-	padding: 4px 0 4px 6px;
-	font-weight: bold;
-}
-
-
-
-table.grid a:hover {
-	color: #d07c57;
-}
-
-table.grid tr.even {
-	background-color: #f0f0f0;
-}
-
-/* expand/collapse */
-table.grid .collapsible {
-	padding: 0 0 3px 0;
-}
-
-.collapsible a.collapsed {
-	margin: 2px;
-	display: block;
-	width: 15px;
-	height: 15px;
-	background: url("img/tablesorter_expand.png") no-repeat 3px 3px;
-	outline: 0;
-}
-
-.collapsible a.expanded {
-	margin: 2px;
-	display: block;background-color:#999;
-	width: 15px;
-	height: 15px;
-	background: url("img/tablesorter_expand.png") no-repeat -24px 3px;
-	outline: 0;
-}
-</style>
-
-<script type="text/javascript" src="js/test3/0.js"></script>
-
+<!-- table sorter -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/responsive_table/sort_table.css">
+<script type="text/javascript" src="js/test3/jQuery 1.2.3.js"></script>
 <script type="text/javascript" src="js/test3/1.js"></script>
 <script type="text/javascript" src="js/test3/2.js"></script>
 <script type="text/javascript" src="js/test3/3.js"></script>
