@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function ajax_get_json(){
+	var results = document.getElementById("results");
+    var hr = new XMLHttpRequest(); // this is the request object
+    hr.open("GET", "mylist.json", true); 
+    hr.setRequestHeader("Content-type", "application/json", true);
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+			//request readystate 4 = complete
+			//request status 200 = okay
+		    var data = JSON.parse(hr.responseText);
+			results.innerHTML = "";
+			for(var obj in data){
+				results.innerHTML += "Task ID: "+data[obj].task_ID+"<br>"+"Type: "+data[obj].type+"<br>"+"Priority: "+data[obj].priority+"<br>"+"Acquiring: "+data[obj].Acquiring+"<hr />";
+			}
+	    }
+    }
+    hr.send(null);
+    results.innerHTML = "requesting...";
+}
+</script>
+</head>
+<body>
+<div id="results"></div>
+<script type="text/javascript">ajax_get_json();</script>
+</body>
+</html>

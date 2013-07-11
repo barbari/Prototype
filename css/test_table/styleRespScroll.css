@@ -1,0 +1,141 @@
+
+* {margin:0; padding:0; outline:0}
+
+#tablewrapper {width: 90%;max-width: 90em;margin: 0 auto;font-size:14px;}
+#tableheader {height:55px;width:100%; margin:10px 0;}
+#tableheader option{padding-left:4px; background-color:#ecf2f6;}
+#tableheader select {float:left; width:125px;height:30px;  background-color:#555; color:white}
+#tableheader input {float:left;  width:225px;height:30px;  margin-left:4px; background-color:#eee;}
+.search {float:right; padding:6px; border:1px solid #c6d5e1; background:#fff}
+.pagetitle{float:left; padding-top:12px;font-size:14px;}
+.details {float:right; padding-top:12px;padding-right:10px;}
+.details div{float:left;  margin-left:15px;}
+.tinytable {width:100%; border-left:1px solid #c6d5e1; border-top:1px solid #c6d5e1; border-bottom:none;}
+.tinytable th {background-color:#555; text-align:left; color:#fff; }
+.tinytable th h3 { padding:8px 8px 8px;font-size:14px; font-weight: normal;}
+.tinytable td {padding:4px 6px 6px; border-bottom:1px solid #999; background-color:#dbdbdb;}
+.tinytable td.exp { background-color:#ebebeb;padding:0;}
+.tinytable .head h3 { background-image: url("../img/test_table/sort.gif") 7px center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .desc, .sortable .asc {background-color:#aaadae;}
+.tinytable .desc h3 { background-image: url("../img/test_table/desc.gif") 7px center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .asc h3 { background-image: url("../img/test_table/asc.gif") 7px  center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .head:hover, .tinytable .desc:hover, .tinytable .asc:hover {color:#fff}
+.tinytable .evenrow td {background:#fff}
+.tinytable .oddrow td {background:#F5F5F5}
+.tinytable tr.disabled{ opacity:0.4;}
+.tinytable td.evenselected {background:#F5F5F5}
+.tinytable td.oddselected {background:#efefef}
+.tinytable tfoot {background:#fff; font-weight:bold}
+.tinytable tfoot td {padding:6px 8px 8px}
+.tinytable td a{color:#999}
+#tablefooter {height:15px; margin-top:20px;width:100%;}
+#tablenav {float:left;}
+#tablenav img {cursor:pointer}
+#tablenav div {float:left; margin-right:15px}
+#tablelocation {float:right;font-size:18px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #C6D5E1;padding: 6px;}
+#tablelocation select {margin-right:3px;width:70px; background-color:#f7fbfe;}
+#tablelocation option{background-color:#ecf2f6;}
+#pagedropdown{width:70px; height:24px;background-color:#f7fbfe;}
+td.disabled{ opacity:0.5}
+#pagedropdown option{background-color:#ecf2f6;}
+#tablelocation div {float:left; margin-left:15px}
+.page {margin-top:2px; font-style:normal;}
+#selectedrow td {background:#eee}
+.colapse_cont{width:27%;margin:2% 3%;float:left;display:inline-block; border:1px solid #d1d1d1;border-radius:5px;}
+ .colapse_cont div{padding:10px;}
+.ttl_id{ color:#444;width:40%;padding:20px 0;font-weight:bold}
+.ttl_vl{width:40%;padding-left:10%;}
+/***Heading pannel contact***/
+.heading-color{	background:#555;}
+
+/*****************Button Style******************/
+
+
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .2em 1em .35em;
+	border-radius:5px;
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+/* blue */
+.blue {
+	color: #eee;
+	border: solid 1px #333;
+	background: #555;
+	
+}
+.blue:hover {
+	background: #666;color: #eee;
+
+}
+.blue:active {
+	color: #eee;
+	background: #777;
+
+}
+    @media only screen and (max-width: 800px) {
+    #tablewrapper {width: 90%;margin: 0 auto;padding: 0 1.875em;}
+	.tinytable th h3 {font-size:12px; padding:4px 8px 6px}
+	#tableheader input{ width:150px;}
+	
+	#flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+	#flip-scroll * html .cf { zoom: 1; }
+	#flip-scroll *:first-child+html .cf { zoom: 1; }
+	
+	#flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+ 
+	#flip-scroll th,
+	#flip-scroll td { margin: 0; vertical-align: top; }
+	#flip-scroll th { text-align: left; }
+	
+	#flip-scroll table { display: block; position: relative; width: 100%; }
+	#flip-scroll thead { display: block; float: left; }
+	#flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+	#flip-scroll thead tr { display: block; }
+	#flip-scroll th { display: block; text-align: right; }
+	#flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+	#flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
+ 
+ 
+	/* sort out borders */
+ 
+	#flip-scroll th { border-bottom: 0; border-left: 0; }
+	#flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+	#flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+	#flip-scroll th:last-child,
+	#flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
+}
+@media only screen and (max-width: 600px) {    #tablewrapper {width: 100%;margin: 0 auto;padding: 0 1.875em;}    #tableheader input{ width:150px;}    .details{ display:none;}}@media screen and (max-width: 479px){    #tableheader input{ width:110px;}    #tablelocation .txt-page{ display:none;}     #tableheader{ margin-bottom:40px;}    .details{ display:none;}}@media screen and (max-width: 330px){    #tableheader input{margin-top:10px;}    }/*Preview*/
+.preview-top{width:100%; height:30px;}
+.sub-preview{width:900px;height:30px;margin:0 auto;}
+.button-top{float:left; margin:0 auto;}
+
+.red {
+	
+	background: #e1071c;
+	width:20px; height:16px;
+}
+.green {
+	
+	background: #19d905;
+	width:20px; height:16px;
+}
+.blueTop {
+	
+	background: #0095cd;
+	width:20px; height:16px;
+}
