@@ -12,7 +12,7 @@ TINY.table = function () {
             d = T$(this.p.colddid);
             var o = document.createElement('option');
             o.value = -1;
-            o.innerHTML = 'All Columns';
+            o.innerHTML = 'Search by: All';
             d.appendChild(o)
         }
         for (i; i < t.w; i++) {
